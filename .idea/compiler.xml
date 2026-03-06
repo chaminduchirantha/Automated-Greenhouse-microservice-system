@@ -6,21 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
-        <module name="service-register" />
         <module name="crop-inventory-service" />
         <module name="sensor-telemetry-service" />
         <module name="config-server" />
+        <module name="automation-service" />
         <module name="discovery-server" />
+        <module name="api-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="17" />
+      <module name="service-register" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="automation-service" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="crop-inventory-service" options="-parameters" />
       <module name="demo" options="-parameters" />
