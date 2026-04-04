@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="create zone Service folder Structure">
+    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="any updates">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/fillter/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/utill/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/lk/ijse/gdse/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/lk/ijse/gdse/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/automation-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation-service/src/test/java/lk/ijse/gdse/automationservice/AutomationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/automation-service/src/test/java/lk/ijse/gdse/automationservice/AutomationServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/lk/ijse/gdse/configserver/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/test/java/lk/ijse/gdse/configserver/ConfigServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crop-inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crop-inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crop-inventory-service/src/test/java/lk/ijse/gdse/cropinventoryservice/CropInventoryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/crop-inventory-service/src/test/java/lk/ijse/gdse/cropinventoryservice/CropInventoryServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/lk/ijse/gdse/discoveryserver/DiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/test/java/lk/ijse/gdse/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensor-telemetry-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sensor-telemetry-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensor-telemetry-service/src/test/java/lk/ijse/gdse/sensortelemetryservice/SensorTelemetryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensor-telemetry-service/src/test/java/lk/ijse/gdse/sensortelemetryservice/SensorTelemetryServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/entitiy/ZoneEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/entitiy/ZoneEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZoneManagementServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.gdse.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -242,7 +233,7 @@
       <workItem from="1773194484664" duration="1085000" />
       <workItem from="1773668247684" duration="147000" />
       <workItem from="1775309751425" duration="71000" />
-      <workItem from="1775309979042" duration="1133000" />
+      <workItem from="1775309979042" duration="5016000" />
     </task>
     <task id="LOCAL-00001" summary="enable eureka server in discover-service">
       <option name="closed" value="true" />
@@ -268,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775310057612</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="any updates">
+      <option name="closed" value="true" />
+      <created>1775311325986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775311325986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +277,7 @@
     <MESSAGE value="enable eureka server in discover-service" />
     <MESSAGE value="create the api-gateway application yml file" />
     <MESSAGE value="create zone Service folder Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="create zone Service folder Structure" />
+    <MESSAGE value="any updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="any updates" />
   </component>
 </project>
