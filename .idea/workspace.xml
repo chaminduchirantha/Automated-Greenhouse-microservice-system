@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="create the api-gateway application yml file">
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/controller/ZoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/dto/ZoneDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/entitiy/ZoneEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/repo/ZoneRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/service/ZoneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/service/impl/ZoneServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zone-management-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="create zone Service folder Structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/lk/ijse/gdse/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/lk/ijse/gdse/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/automation-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation-service/src/test/java/lk/ijse/gdse/automationservice/AutomationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/automation-service/src/test/java/lk/ijse/gdse/automationservice/AutomationServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/lk/ijse/gdse/configserver/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/test/java/lk/ijse/gdse/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop-inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crop-inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop-inventory-service/src/test/java/lk/ijse/gdse/cropinventoryservice/CropInventoryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/crop-inventory-service/src/test/java/lk/ijse/gdse/cropinventoryservice/CropInventoryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/lk/ijse/gdse/discoveryserver/DiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/test/java/lk/ijse/gdse/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensor-telemetry-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sensor-telemetry-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensor-telemetry-service/src/test/java/lk/ijse/gdse/sensortelemetryservice/SensorTelemetryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensor-telemetry-service/src/test/java/lk/ijse/gdse/sensortelemetryservice/SensorTelemetryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/entitiy/ZoneEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/zone-management-service/src/main/java/lk/ijse/gdse/zonemanagementservice/entitiy/ZoneEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +74,18 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AutomationServiceApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.CropInventoryServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.SensorTelemetryServiceApplication.executor": "Run",
     "Spring Boot.ServiceRegisterApplication.executor": "Run",
     "Spring Boot.ZoneManagementServiceApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Gdse -third semestor/microservice/app/Automated-Greenhouse-Management-System",
+    "last_opened_file_path": "F:/Gdse -third semestor/microservice/agms-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -233,6 +242,7 @@
       <workItem from="1773194484664" duration="1085000" />
       <workItem from="1773668247684" duration="147000" />
       <workItem from="1775309751425" duration="71000" />
+      <workItem from="1775309979042" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="enable eureka server in discover-service">
       <option name="closed" value="true" />
@@ -250,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772810176524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create zone Service folder Structure">
+      <option name="closed" value="true" />
+      <created>1775310057612</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775310057612</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +277,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="enable eureka server in discover-service" />
     <MESSAGE value="create the api-gateway application yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the api-gateway application yml file" />
+    <MESSAGE value="create zone Service folder Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="create zone Service folder Structure" />
   </component>
 </project>

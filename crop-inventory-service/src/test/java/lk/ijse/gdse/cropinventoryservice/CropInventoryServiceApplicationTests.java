@@ -1,13 +1,13 @@
 package lk.ijse.gdse.cropinventoryservice;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CropInventoryServiceApplicationTests {
+public class CropInventoryServiceApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
 }
