@@ -1,0 +1,80 @@
+# ============================================================
+# API Gateway - External Configuration
+# Served by Config Server on http://localhost:8888
+# ============================================================
+
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      # Routes configuration
+      routes:
+        # Automation Service Route
+        - id: automation-service
+          uri: lb://AUTOMATION-SERVICE
+          predicates:
+            - Path=/automation/**
+          filters:
+            - StripPrefix=0
+
+        # Zone Management Service Route
+        - id: zone-management-service
+          uri: lb://ZONE-MANAGEMENT-SERVICE
+          predicates:
+            - Path=/api/zones/**
+          filters:
+            - StripPrefix=0
+
+        # Sensor Telemetry Service Route
+        - id: sensor-telemetry-service
+          uri: lb://SENSOR-TELEMETRY-SERVICE
+          predicates:
+            - Path=/api/sensors/**
+          filters:
+            - StripPrefix=0
+
+        # Crop Inventory Service Route
+        - id: crop-inventory-service
+          uri: lb://CROP-INVENTORY-SERVICE
+          predicates:
+            - Path=/api/crops/**
+          filters:
+            - StripPrefix=0
+
+      # Discovery Locator
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+# Eureka Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+  file:
+    name: logs/api-gateway.log
+    max-size: 10MB
+    max-history: 10
+
+# Management Endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always

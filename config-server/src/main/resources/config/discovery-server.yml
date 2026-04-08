@@ -1,0 +1,41 @@
+# ============================================================
+# Discovery Server (Eureka) - External Configuration
+# Served by Config Server on http://localhost:8888
+# ============================================================
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-server
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # Eureka Server should not register with another Eureka server
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.netflix.eureka: DEBUG
+  file:
+    name: logs/discovery-server.log
+    max-size: 10MB
+    max-history: 10
+
+# Management Endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
