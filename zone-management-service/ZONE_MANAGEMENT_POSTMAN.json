@@ -1,0 +1,361 @@
+{
+  "info": {
+    "_postman_id": "zone-management-collection",
+    "name": "Zone Management Service Tests",
+    "description": "API test collection for Zone Management Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Zone - Tomato",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Tomato Zone\",\n  \"minTemp\": 18.0,\n  \"maxTemp\": 27.0,\n  \"minHumidity\": 50.0,\n  \"maxHumidity\": 70.0,\n  \"deviceId\": \"device-001\",\n  \"description\": \"High temperature tolerant crops\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Zone - Cucumber",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Cucumber Zone\",\n  \"minTemp\": 15.0,\n  \"maxTemp\": 25.0,\n  \"minHumidity\": 60.0,\n  \"maxHumidity\": 80.0,\n  \"deviceId\": \"device-002\",\n  \"description\": \"High humidity requirement crops\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Zone - Lettuce",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Lettuce Zone\",\n  \"minTemp\": 10.0,\n  \"maxTemp\": 20.0,\n  \"minHumidity\": 40.0,\n  \"maxHumidity\": 60.0,\n  \"deviceId\": \"device-003\",\n  \"description\": \"Leafy vegetables\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Zone - Invalid (minTemp >= maxTemp)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Invalid Zone\",\n  \"minTemp\": 30.0,\n  \"maxTemp\": 20.0,\n  \"minHumidity\": 40.0,\n  \"maxHumidity\": 60.0,\n  \"deviceId\": \"device-004\",\n  \"description\": \"Invalid thresholds\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Zones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Zone by ID - 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Zone by ID - Non-existent",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/999",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "999"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Zone by Name - Tomato",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/name/Tomato Zone",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "name", "Tomato Zone"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Zone by Device ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/device/device-001",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "device", "device-001"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Zones by User ID -1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/user/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "user", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Zone - 1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Tomato Zone Updated\",\n  \"minTemp\": 20.0,\n  \"maxTemp\": 28.0,\n  \"minHumidity\": 45.0,\n  \"maxHumidity\": 75.0,\n  \"deviceId\": \"device-001\",\n  \"description\": \"Updated thresholds for tomato zone\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Zone - Non-existent",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Non-existent Zone\",\n  \"minTemp\": 20.0,\n  \"maxTemp\": 28.0,\n  \"minHumidity\": 45.0,\n  \"maxHumidity\": 75.0,\n  \"deviceId\": \"device-999\",\n  \"description\": \"This should fail\",\n  \"createdBy\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones/999",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "999"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Zone - 1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Zone - Non-existent",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/zones/999",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "999"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Zone - Valid",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"minTemp\": 18.0,\n  \"maxTemp\": 27.0,\n  \"minHumidity\": 50.0,\n  \"maxHumidity\": 70.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "validate"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Zone - Invalid (minTemp >= maxTemp)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"minTemp\": 30.0,\n  \"maxTemp\": 20.0,\n  \"minHumidity\": 50.0,\n  \"maxHumidity\": 70.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "validate"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Zone - Invalid (humidity > 100)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"minTemp\": 18.0,\n  \"maxTemp\": 27.0,\n  \"minHumidity\": 50.0,\n  \"maxHumidity\": 150.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/zones/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "zones", "validate"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
