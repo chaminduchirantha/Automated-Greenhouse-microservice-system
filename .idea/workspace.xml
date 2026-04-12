@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="any updates">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/fillter/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/gdse/apigateway/utill/JwtUtil.java" afterDir="false" />
+    <list default="true" id="c84e455b-b3a6-43a4-bff0-3b303cc4b17e" name="Changes" comment="SensorTelemetryServiceApplication main file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,43 +49,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ApiGatewayApplication.executor": "Run",
-    "Maven. [clean,install].executor": "Run",
-    "Maven. [compile].executor": "Run",
-    "Maven. [install].executor": "Run",
-    "Maven.api-gateway [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.AutomationServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.CropInventoryServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServerApplication.executor": "Run",
-    "Spring Boot.SensorTelemetryServiceApplication.executor": "Run",
-    "Spring Boot.ServiceRegisterApplication.executor": "Run",
-    "Spring Boot.ZoneManagementServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Gdse -third semestor/microservice/agms-project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gateway [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AutomationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CropInventoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SensorTelemetryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceRegisterApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ZoneManagementServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Gdse -third semestor/microservice/agms-project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lk.ijse.gdse.apigateway" />
@@ -112,7 +108,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.gdse.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -233,7 +229,12 @@
       <workItem from="1773194484664" duration="1085000" />
       <workItem from="1773668247684" duration="147000" />
       <workItem from="1775309751425" duration="71000" />
-      <workItem from="1775309979042" duration="5016000" />
+      <workItem from="1775309979042" duration="6668000" />
+      <workItem from="1775533320031" duration="2456000" />
+      <workItem from="1775636333460" duration="708000" />
+      <workItem from="1775655331650" duration="9873000" />
+      <workItem from="1775705679729" duration="7662000" />
+      <workItem from="1775800251158" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="enable eureka server in discover-service">
       <option name="closed" value="true" />
@@ -267,17 +268,214 @@
       <option name="project" value="LOCAL" />
       <updated>1775311325986</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="generate the toke , filter chain apply  the jwt dependency">
+      <option name="closed" value="true" />
+      <created>1775321977566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775321977566</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented Automation Service">
+      <option name="closed" value="true" />
+      <created>1775658262032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775658262032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implemented config server">
+      <option name="closed" value="true" />
+      <created>1775660404465</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775660404465</updated>
+    </task>
+    <task id="LOCAL-00008" summary="miss pushing zone response and zonService Client because push the zone response and zonService Client in automation service">
+      <option name="closed" value="true" />
+      <created>1775661339181</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775661339181</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create zone dto and zone entity in zone management system">
+      <option name="closed" value="true" />
+      <created>1775661710603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775661710603</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update dependency in pom.xml">
+      <option name="closed" value="true" />
+      <created>1775662417463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775662417463</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create controller in zone controller">
+      <option name="closed" value="true" />
+      <created>1775662804723</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775662804723</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create application properties file and application yml">
+      <option name="closed" value="true" />
+      <created>1775663968318</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775663968318</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create zone repo , zone service and zone service impl in zone management service">
+      <option name="closed" value="true" />
+      <created>1775665487895</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775665487895</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ZoneManagementServiceApplication main file">
+      <option name="closed" value="true" />
+      <created>1775665533320</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1775665533320</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create zone management postman json file">
+      <option name="closed" value="true" />
+      <created>1775666145643</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1775666145643</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create sensor telemetry entity in sensor service">
+      <option name="closed" value="true" />
+      <created>1775715885613</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1775715885613</updated>
+    </task>
+    <task id="LOCAL-00017" summary="create sensor telemetry controller  sensor service">
+      <option name="closed" value="true" />
+      <created>1775718824281</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1775718824281</updated>
+    </task>
+    <task id="LOCAL-00018" summary="create sensor telemetry service and sensor telemetry repository">
+      <option name="closed" value="true" />
+      <created>1775743665193</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1775743665193</updated>
+    </task>
+    <task id="LOCAL-00019" summary="create application yml file and update pom xml">
+      <option name="closed" value="true" />
+      <created>1775747904260</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1775747904260</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update pom xml file">
+      <option name="closed" value="true" />
+      <created>1775748047874</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1775748047874</updated>
+    </task>
+    <task id="LOCAL-00021" summary="missing pushing zone service client in automation service">
+      <option name="closed" value="true" />
+      <created>1775748222922</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1775748222922</updated>
+    </task>
+    <task id="LOCAL-00022" summary="create crop inventory entity">
+      <option name="closed" value="true" />
+      <created>1775750993296</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1775750993296</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update dependencies">
+      <option name="closed" value="true" />
+      <created>1775751031718</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1775751031718</updated>
+    </task>
+    <task id="LOCAL-00024" summary="create application.yml file , crop inventory controller , crop inventory repo and service">
+      <option name="closed" value="true" />
+      <created>1775760699885</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1775760699885</updated>
+    </task>
+    <task id="LOCAL-00025" summary="main file crop inventory">
+      <option name="closed" value="true" />
+      <created>1775760741360</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1775760741360</updated>
+    </task>
+    <task id="LOCAL-00026" summary="SensorTelemetryServiceApplication main file">
+      <option name="closed" value="true" />
+      <created>1775804047453</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1775804047453</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="enable eureka server in discover-service" />
     <MESSAGE value="create the api-gateway application yml file" />
     <MESSAGE value="create zone Service folder Structure" />
     <MESSAGE value="any updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="any updates" />
+    <MESSAGE value="generate the toke , filter chain apply  the jwt dependency" />
+    <MESSAGE value="Implemented Automation Service" />
+    <MESSAGE value="Implemented config server" />
+    <MESSAGE value="miss pushing zone response and zonService Client because push the zone response and zonService Client in automation service" />
+    <MESSAGE value="create zone dto and zone entity in zone management system" />
+    <MESSAGE value="update dependency in pom.xml" />
+    <MESSAGE value="create controller in zone controller" />
+    <MESSAGE value="create application properties file and application yml" />
+    <MESSAGE value="create zone repo , zone service and zone service impl in zone management service" />
+    <MESSAGE value="ZoneManagementServiceApplication main file" />
+    <MESSAGE value="create zone management postman json file" />
+    <MESSAGE value="create sensor telemetry entity in sensor service" />
+    <MESSAGE value="create sensor telemetry controller  sensor service" />
+    <MESSAGE value="create sensor telemetry service and sensor telemetry repository" />
+    <MESSAGE value="create application yml file and update pom xml" />
+    <MESSAGE value="update pom xml file" />
+    <MESSAGE value="missing pushing zone service client in automation service" />
+    <MESSAGE value="create crop inventory entity" />
+    <MESSAGE value="update dependencies" />
+    <MESSAGE value="create application.yml file , crop inventory controller , crop inventory repo and service" />
+    <MESSAGE value="main file crop inventory" />
+    <MESSAGE value="SensorTelemetryServiceApplication main file" />
+    <option name="LAST_COMMIT_MESSAGE" value="SensorTelemetryServiceApplication main file" />
   </component>
 </project>
